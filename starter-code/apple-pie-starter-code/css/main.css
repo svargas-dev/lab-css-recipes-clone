@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+  padding: 0%;
+  color: rgba(41, 40, 40, 0.9);
+}
+
+.hero-image {
+  display: flex;
+  background-image: url("../images/apple-pie.jpg");
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  font-size: 5em;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+  top: 250px;
+  margin: 0 auto;
+  /* transform: translate(-50%, -50%); */
+  color: white;
+}
+
+.content {
+  width: 75%;
+  margin: 40px auto;
+}
+
+.content img {
+  display: block;
+  margin: 0 auto;
+
+}
+
+#recipe-info {
+  height: 80px;
+}
+
+#cooking-info {
+  height: 100px;
+}
+
+
+p {
+  font-size: 1.5em;
+}
+
+
+/* Style the lists */
+li {
+  font-size: 1.2em;
+}
+ul li {
+  list-style-type: none;
+}
+
+ol {
+  counter-reset: list;
+}
+
+ol li {
+  list-style: none;
+}
+
+ol li:before {
+  counter-increment: list;
+  content: counter(list, decimal) ")";
+}
